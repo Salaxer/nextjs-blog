@@ -22,11 +22,15 @@ export default function Home({allPostsData}) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
+        <p>I am a Software Developer and currently on certification process of Mechatronics engineering from Mexico with a passion for building digital and physical services/stuff. I always find the way to solving real-life problems with code and my mind. I want collaborate with teams passionate to created innovative products.
+        I am improving day by day because I've never stopped learning.</p>
+      </section>
+      <section>
+        <h2 className={utilStyles.headingMd}>Using Api with Static Generation</h2>
         <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-          <Link href="/some/1" >Here</Link>
+          <Link href="/products/1" >Here</Link> You can see a list of Products.
+          <br/>
+          (from <a href="https://fakestoreapi.com/products/" target="_blank" rel="noopener noreferrer">the FakeStore API</a>)
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
