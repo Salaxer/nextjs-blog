@@ -6,9 +6,7 @@ import utilStyles from '../../styles/utils.module.css'
 
 // Obtain the statics phats from the file on posts/***.md and assign to the props
 export async function getStaticPaths() {
-    console.error('ssss');
     const paths = getAllPostIds()
-    console.log('Obtain the statics pats from the url and assign to the props',paths);
     return {
         paths, 
         fallback: false
@@ -17,9 +15,7 @@ export async function getStaticPaths() {
 
 // obtain the path of the url;; in this case will be [id] and return the props for the component Post
 export async function getStaticProps({ params }) {
-    console.log("here the last one result::: ",params);
     const postData = await getPostData(params.id)
-    console.log("obtian the static props and return anoter one === ",postData);
     return {
         props: {
             postData

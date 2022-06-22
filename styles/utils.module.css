@@ -24,6 +24,14 @@
     font-size: 1.2rem;
     line-height: 1.5;
   }
+
+  .backToHome {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0 0;
+  }
   
   .borderCircle {
     border-radius: 9999px;
